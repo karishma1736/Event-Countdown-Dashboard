@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏳ Event Countdown Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Event Countdown Dashboard</h1>
+
+    <div class="input-section">
+        <input type="text" id="eventName" placeholder="Enter Event Name">
+        <input type="datetime-local" id="eventDate">
+        <button onclick="startCountdown()">Start Countdown</button>
+    </div>
+
+    <div class="dashboard">
+        <h2 id="displayEvent">No Event Selected</h2>
+
+        <div class="countdown">
+            <div class="box">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+
+            <div class="box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+
+            <div class="box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+
+            <div class="box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
